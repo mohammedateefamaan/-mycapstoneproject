@@ -1,0 +1,9 @@
+package org.capstone.fsd.capstone.api.mapper;
+
+import org.mapstruct.Mapper;
+
+@Mapper
+public interface FeeMapper
+		extends EntityDtoMapper<org.capstone.fsd.capstone.api.dto.Fee, org.capstone.fsd.capstone.api.entity.Fee> {
+
+}

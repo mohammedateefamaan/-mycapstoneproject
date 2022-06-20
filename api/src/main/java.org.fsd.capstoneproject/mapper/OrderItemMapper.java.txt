@@ -1,0 +1,13 @@
+package org.capstone.fsd.capstone.api.mapper;
+
+import org.mapstruct.Mapper;
+
+@Mapper(uses = { FoodMapper.class })
+public interface OrderItemMapper extends
+		EntityDtoMapper<org.capstone.fsd.capstone.api.dto.OrderItem, org.capstone.fsd.capstone.api.entity.OrderItem> {
+
+	org.capstone.fsd.capstone.api.entity.OrderItem toEntity(org.capstone.fsd.capstone.api.dto.OrderItem dto);
+
+	org.capstone.fsd.capstone.api.dto.OrderItem toDto(org.capstone.fsd.capstone.api.entity.OrderItem entity);
+
+}

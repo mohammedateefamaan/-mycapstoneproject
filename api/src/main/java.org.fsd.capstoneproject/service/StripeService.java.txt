@@ -1,0 +1,12 @@
+package org.capstone.fsd.capstone.api.service;
+
+import org.capstone.fsd.capstone.api.dto.ChargeRequest;
+import org.capstone.fsd.capstone.api.exception.FoodBoxServiceException;
+
+import com.stripe.model.Charge;
+
+public interface StripeService {
+
+	Charge charge(ChargeRequest chargeRequest) throws FoodBoxServiceException;
+
+}

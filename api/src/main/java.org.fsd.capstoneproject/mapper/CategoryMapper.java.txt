@@ -1,0 +1,16 @@
+package org.capstone.fsd.capstone.api.mapper;
+
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+
+@Mapper
+public interface CategoryMapper extends
+		EntityDtoMapper<org.capstone.fsd.capstone.api.dto.Category, org.capstone.fsd.capstone.api.entity.Category> {
+
+	@Mapping(target = "image", ignore = true)
+	org.capstone.fsd.capstone.api.entity.Category toEntity(org.capstone.fsd.capstone.api.dto.Category dto);
+
+	@Mapping(target = "image", ignore = true)
+	org.capstone.fsd.capstone.api.dto.Category toDto(org.capstone.fsd.capstone.api.entity.Category entity);
+	
+}

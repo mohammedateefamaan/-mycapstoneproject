@@ -1,0 +1,9 @@
+package org.capstone.fsd.capstone.api.mapper;
+
+import org.mapstruct.Mapper;
+
+@Mapper
+public interface UserMapper
+		extends EntityDtoMapper<org.capstone.fsd.capstone.api.dto.User, org.capstone.fsd.capstone.api.entity.User> {
+
+}
